@@ -36,6 +36,7 @@ function render_elements() {
             }
             let steps = response.routes[0].legs[0].steps
             for(let i=0; i<steps.length; i++){
+                console.log(steps[i])
                 let image
                 let distance = steps[i].distance
                 let instruction = steps[i].maneuver.instruction
